@@ -8,6 +8,8 @@ const User = ({ user, loading, getUser, getUserRepos, repos, match }) => {
   useEffect(() => {
     getUser(match.params.login);
     getUserRepos(match.params.login);
+    //the next comment disables the warning for useEffect Hook
+    //eslint-disable-next-line
   }, []);
 
   const {
